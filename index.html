@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+    <!-- Phần tiêu đề -->
+    <head>
+        <title>
+            7 1 2 5 website
+        </title>
+        <meta charset="utf-8">
+    <link rel="stylesheet" href=".\assets\css\main.css">
+    <link rel="stylesheet" href=".\assets\font\themify-icons\themify-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+    </head>
+    <!-- Nội dung web -->
+    <body>
+        <div id="main">
+            <div id="header">
+                <ul id="nav">
+                    <li>
+                        <a href="#">
+                            <i class="nav-icon ti-home"></i>
+                            7 1 2 5
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Liên hệ</a>
+                    </li>
+                </ul>
+
+                <div class="login row">
+                    <div class="header-button js-login-button col col-half">
+                        <button class="header-btn" href="#">
+                            <i class="ti-key"></i>
+                            Đăng nhập
+                        </button>
+                    </div>
+
+                    <div class="header-button js-signup-button col col-half">
+                        <button class="header-btn recursive-font" href="#">
+                            <i class="ti-clipboard"></i>
+                            Đăng ký
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal js-modal js-login-modal">
+                    <div class="modal-container js-login-modal-container">
+                        <div class="modal-close js-login-modal-close">
+                            <i class="ti-close"></i>
+                        </div>
+
+                        <header class="modal-header">
+                            <i class="ti-key"></i>
+                            Đăng nhập
+                        </header>
+                        
+                        <div class="modal-body">
+                            <label for="username" class="modal-label">Tên đăng nhập</label>
+                            <input id="username" type="text" class="modal-input" placeholder="Username">
+                            <label for="password" class="modal-label">Mật khẩu</label>
+                            <input id="password" type="password" class="modal-input" placeholder="Password">
+                            <input for="check" type="checkbox"> Ghi nhớ mật khẩu
+                        </div>
+                            
+                        <button id="login-btn">
+                            <i class="ti-check"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal js-modal js-signup-modal">
+                    <div class="modal-container js-signup-modal-container">
+                        <div class="modal-close js-signup-modal-close">
+                            <i class="ti-close"></i>
+                        </div>
+
+                        <header class="modal-header">
+                            <i class="ti-key"></i>
+                            Đăng ký
+                        </header>
+                        
+                        <div class="modal-body">
+                            <label for="username" class="modal-label">Tên đăng nhập</label>
+                            <input id="username" type="text" class="modal-input" placeholder="Username">
+                            <label for="password" class="modal-label">Mật khẩu</label>
+                            <input id="password" type="password" class="modal-input" placeholder="Password">
+                            <label for="retype-password" class="modal-label">Nhập lại mật khẩu</label>
+                            <input id="retype-password" type="password" class="modal-input" placeholder="Password">
+                        </div>
+                            
+                        <button id="login-btn">
+                            <i class="ti-check"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <script>
+                    const loginBtn = document.querySelector('.js-login-button')
+                    const signupBtn = document.querySelector('.js-signup-button')
+                    const loginModal = document.querySelector('.js-login-modal')
+                    const signupModal = document.querySelector('.js-signup-modal')
+                    const loginModalContainer = document.querySelector(".js-login-modal-container")
+                    const loginModalClose = document.querySelector(".js-login-modal-close")
+                    const signupModalContainer = document.querySelector(".js-signup-modal-container")
+                    const signupModalClose = document.querySelector(".js-signup-modal-close")
+                    function showLoginModal() {
+                        loginModal.classList.add('open')
+                    }
+                    function showSignupModal() {
+                        signupModal.classList.add('open')
+                    }
+                    function closeLoginModal() {
+                        loginModal.classList.remove('open')
+                    }
+                    function closeSignupModal() {
+                        signupModal.classList.remove('open')
+                    }
+                    loginBtn.addEventListener('click', showLoginModal)
+                    signupBtn.addEventListener('click', showSignupModal)
+                    loginModalClose.addEventListener('click', closeLoginModal)
+                    loginModal.addEventListener('click', closeLoginModal)
+                    loginModalContainer.addEventListener('click', function (event) {
+                        event.stopPropagation()
+                    })
+                    signupModalClose.addEventListener('click', closeSignupModal)
+                    signupModal.addEventListener('click', closeSignupModal)
+                    signupModalContainer.addEventListener('click', function (event) {
+                        event.stopPropagation()
+                    })
+                </script>
+            </div>
+
+            <div id="wallpaper">
+                <div class="text-content">
+                    <h2 class="text-heading">Thanh xuân w/ T1K30</h2>
+                </div>
+            </div>
+            
+            <div id="content">
+                <div id="intro" class="intro-container">
+                    <div class="content-body">
+                        <h2 class="section-heading">
+                            Về website này
+                        </h2>
+                        <div class="container-content row">
+                            <div class="intro-text col col-half">
+                                <p class="content-text">
+                                    Đây là dự án đầu tay của tớ trong hành trình học lập trình web của tớ. Website này vẫn trong quá trình phát triển nên nếu có sai sót gì thì mong mọi người inbox mình để phản ánh nhé ^ _ ^
+                                </p>
+                            </div>
+        
+                            <div class="intro-img col col-half">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="about" class="about-container text-white">
+                    <div class="content-body">
+                        <h2 class="section-heading">
+                            About Me
+                        </h2>
+
+                        <div class="container-content row">
+                            <div class="about-img col col-half">
+
+                            </div>
+
+                            <div class="about-content col col-half">
+                                <p>
+                                    Xin chào, tớ là Nguyễn Công Sơn. Hiện tại tớ đang là sinh viên K68, ngành CNTT: Khoa học Máy tính của Đại học Bách Khoa Hà Nội.
+                                    Bây giờ tớ đang học song song cả lập trình C++ lẫn lập trình web.
+                                    Tớ là một chàng trai khá là hướng nội, nhưng mà khi đã quen thì có thể hơi tăng động xíu :v Cho nên nếu bạn muốn làm quen tớ thì mong bạn chủ động inbox tớ, chứ không là tớ ngại làm quen lắm :>
+                                    <br>
+                                    Một số thông tin cơ bản của tớ:
+                                    <div class="profile-list">
+                                        <ul>
+                                            <li>
+                                                <p> Ngày sinh: 07/11/2005</p>
+                                            </li>
+                                            <li>
+                                                <p> Biệt danh: Mộc Nhãn</p>
+                                            </li>
+                                            <li>
+                                                <p> Sở thích: Lập trình, nấu nướng, xem anime</p>
+                                            </li>
+                                            <li>
+                                                <p> Màu yêu thích: Xanh dương</p>
+                                            </li>
+                                            <li>
+                                                <p> Tính cách: Hướng nội nửa mùa, lâu lâu ngồi một mình lại suy</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact" class="contact-container">
+                    <div class="content-body">
+                        <h2 class="section-heading">
+                            Liên hệ với tớ
+                        </h2>
+
+                        <div class="container-content row">
+                            <div class="contact-info col col-half">
+                                <h3 class="sub-heading">Thông tin liên hệ</h3>
+
+                                <p>
+                                    <i class="ti-location-pin"></i> Địa chỉ: Thị trấn Nghèn, Can Lộc, Hà Tĩnh
+                                </p>
+                                <p>
+                                    <i class="ti-info"></i> Điện thoại: 094.289.7526
+                                </p>
+                                <p>
+                                    <i class="ti-email"></i> Email: congson7125@gmail.com
+                                </p>
+                            </div>
+
+                            <div class="social-link col col-half">
+                                <h3 class="sub-heading">Liên kết xã hội</h3>
+
+                                <div class="nav">
+                                    <ul>
+                                        <li>
+                                            <p><a class="nav-button" href="https://www.facebook.com/zirconnotfound/" target="_blank" rel="noopener">Trang cá nhân</a></p>
+                                        </li>
+                                        <li><p><a class="nav-button" href="https://www.facebook.com/profile.php?id=100091447389849" target="_blank" rel="noopener">Blog cá nhân</a></p></li>
+                                        <li><p><a class="nav-button" href="https://forms.gle/2cwNEvNtWx71SuDRA" target="_blank" rel="noopener">Viết lưu bút ở đây</a></p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <h1>Tạm biệt! Hy vọng mọi người sẽ gặp lại tớ tại các dự án khác nhé!</h1>
+
+                <p>Copyright by Mộc Nhãn. All Right Reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>
