@@ -7,6 +7,21 @@ html {
     font-family: nunito !important;
     scroll-behavior: smooth;
 }
+@media (min-width: 1024px) {
+    .pc {
+        display: block;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .tablet {
+        display: block;
+    }
+}
+@media (max-width: 739px) {
+    .mobile {
+        display: block;
+    }
+} */
 .row {
     margin-left: -8px;
     margin-right: -8px;
@@ -218,7 +233,8 @@ a:active {
 }
 #content .content-body {
     padding: 64px 16px;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -239,6 +255,7 @@ a:active {
 }
 #about {
     background-color: #b1a2ee;
+    width: 100%;
 }
 #about .about-img {
     padding-top: 50%;
