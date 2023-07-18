@@ -64,21 +64,22 @@ a:active {
     font-size: 20px;
 }
 #header {
-    height: 46.5px;
+    height: 2.9rem;
     background-color: #6527be;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
 }
 #header a {
     color: rgba(255,255,255,0.7);
     text-decoration: none;
-    line-height: 46.5px;
+    line-height: 2.9rem;
     padding: 0 24px;
     display: flex;
-    float: left;
     font-weight: bolder;
     font-size: 20px;
     justify-content: center;
@@ -90,8 +91,7 @@ a:active {
 #header .login {
     height: 100%;
     min-width: 300px;
-    float: right;
-    display: inline-block;
+    display: flex;
 }
 #header .header-button {
     height: 100%;
@@ -205,12 +205,12 @@ a:active {
     }
 }
 #nav {
-    display: inline;
+    display: flex;
     list-style-type: none;
 }
 #nav a .nav-icon {
     font-size: 14px;
-    line-height: 46.5px;
+    line-height: 2.9em;
     padding: 0 10px;
 }
 #wallpaper {
@@ -218,7 +218,7 @@ a:active {
     background: url('./img/wallpaper/wallpaper.jpg') top center / cover no-repeat;
     width: 100%;
     padding-top: calc(100% * 2 / 3);
-    margin-top: 46.5px;
+    margin-top: 2.9rem;
 }
 #wallpaper .text-content {
     position: absolute;
